@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="stylesheet" href="css/apuntes.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <title>Apuntes</title>
+</head>
+<body>
+    <div id="inicio" class="container">
+        <div class="card">
+            <a href="#tema1"><img src="Imagenes/tema1P.png" alt=""></a>
+        </div>
+        <div class="card">
+            <a href="#tema2"><img src="Imagenes/tema2P.png" alt=""></a>
+        </div>
+        <div class="card">
+            <a href="#tema3"><img src="Imagenes/tema3P.png" alt=""></a>
+        </div>
+        <div class="card">
+            <a href="#tema4"><img src="Imagenes/tema4P.png" alt=""></a>
+        </div>
+    </div>
+    <div class="contenedor shadow">
+        <div id="tema1"></div>
+        <div class="temas">
+            <h2>Tema 1: Los lenguajes de la web</h2>
+            <ol type="1">
+                <li><span class="subtitulos">Introducción, evolución y estado actual de HTML.</span>
+                    <p>
+                        El HTML es el lenguaje de marcas más conocido y usado ya que es accesible, fiable, fácil de usar y de uso libre.<br>
+                        <br>
+                        Los navegadores interpretan las marcas contenidas en los documentos 
+                        HTML y representan la información.<br>
+                        Trabajando junto con las hojas de estilo (CSS) es un increíble         
+                        lenguaje de representación de información.<br>
+                        <br>
+                    </p>
+                </li>
+                <li><span class="subtitulos">Estructura y sintaxis del lenguaje HTML.</span>
+                    <p>
+                        Los elementos que forman las páginas HTML están identificados por 
+                        marcas o etiquetas.<br>
+                        Estas marcas envuelven el contenido de la página.<br>
+                    </p>
+                    <ul>
+                        <li><span class="subtitulos">Elementos vacíos:</span>
+                            <p>
+                                No todas las etiquetas necesitan apertura y cierre.<br>
+                                No son contenedoras<br>
+                            </p>
+                        </li>
+                        <li><span class="subtitulos">Atributos:</span>
+                            <p>
+                                Caracterizar al elemento.<br>
+                                Opcional.<br>
+                                Todos los elementos pueden disponer de atributos, pero no
+                                son todos los atributos son aplicables a cualquier       
+                                elemento.<br>
+                            </p>
+                        </li>
+                        <li>
+                            <span class="subtitulos">Entidades:</span>
+                            <p>
+                                Conjunto de caracteres que permiten indicar al navegador que represente caracteres que, por diversas razones no se representan correctan.
+                            </p>
+                        </li>
+                        <li>
+                            <span class="subtitulos">Comentarios:</span>
+                            <p>
+                                Admite incluir líneas de comentarios y proporciona información a los diseñadores y programadores
+                            </p>
+                        </li>
+                        <p>
+                            <li><span class="subtitulos">Los elementos de un documento HTML se pueden anidar.</span></li><br>
+                            <li><span class="subtitulos">Un elemento puede contener uno o más elementos en su interior</span></li>
+                        </p>
+                    </ul>
+                </li>
+                <li><span class="subtitulos">Elementos de HTML.</span>
+                    <p>
+                        Un documento HTML está compuesto de elementos organizados de manera             
+                        jerárquica<br>
+                        Los elementos &lt;html&gt;, &lt;head&gt;, &lt;body&gt; son fundamentales.<br>
+                    <ul>
+                        <li><span class="subtitulos">Etiqueta &lt;html&gt;:</span>
+                            <p>
+                                Elemento principal y raíz del documento HTML.<br>
+                                Todo el contenido del documento está incluido en él.<br>
+                            </p>
+                        </li>
+                        <li><span class="subtitulos">Etiqueta &lt;head&gt;:</span>
+                            <p>
+                                Primera sección de la página.<br>
+                                No será directamente visible en la representación del documento, ni en el navegador.<br>
+                                Pero, sí tiene efecto directo y relevante en dicha representación.<br>
+                                <blockquote><span class="subtitulos">Titulo &lt;title&gt;:</span><br>
+                                Se muestra en la pestaña correspondiente.<br>
+                                Favorito en el navegador.<br>
+                                Se tiene en cuenta para clasificar la página.<br></blockquote>
+                            </p>
+                        </li>
+                        <br>
+                        <li>
+                            <span class="subtitulos">Etiqueta &lt;body&gt;:</span>
+                            <p>
+                                Representan el cuerpo de la página web<br>
+                                En él, se encuentran los contenidos que se van a presentar en el navegador y la que los usuarios podrán visualizar en sus pantallas.<br>
+                                Los elementos del body se clasifican en elementos de bloque y elementos de línea.<br>
+                            </p>
+                        </li>
+                        <li>
+                            <span class="subtitulos">Normas y recomendaciones:</span>
+                            <p>
+                                Mantener una buena organización. Tabulaciones.<br>
+                                Las etiquetas y los atributos no son casen sensitive.<br>
+                                Dependiendo del hospedaje de la página web y del sistema operativo donde se aloja, los valores de los atributos sí que pueden ser case sensitive.<br>
+                                No se puede incorporar espacios en blanco ni tabuladores en los nombres de etiquetas o atributos.<br>
+                                Los atributos que toman un valor dentro de las etiquetas deben ir entrecomillados si contienen caracteres que no sean alfanuméricos.<br>
+                                <br>
+                                Los atributos que sí toman un valor alfanumérico pueden contener espacion en blanco, siempre que vayan entrecomillados también.<br>
+                                HTML y los navegadores sustituyen cualquier número indefinido de espacios en blanco o de tabulaciones por un solo espacio en blanco.<br>
+                                Las etiquetas de bloque (block), engloban contenido y siempre deben cerrarse. Las etiquetas de líneas(inline), no encierran contenido y pueden no cerrarse.<br>
+                                Las etiquetas se pueden anidar si se desean aplicar diferentes propiedades de manera simultánea.<br>
+                                Los elementos, etiqueta y atributos desconocidos serán omitidos por los navegadores.<br>
+                            </p>
+                        </li>
+                    </ul>
+                </li>
+            </ol>
+        </div>
+        <div id="tema2">
+        </div>
+        <div class="temas">
+            <h2>Tema 2: Etiquetas relacionadas con texto</h2>
+            <ol>
+                <li>
+                    <span class="subtitulos">Encabezados</span>
+                    <p>
+                        -Representan elementos de encabezado. Ej: &lt; h1 &gt;, hay del 1 al 6 (h1, h2, etc).
+                    </p>
+                </li>
+                <li>
+                    <span class="subtitulos">Etiquetas de formato</span>
+                    <p>
+                        -Hay multitud, todas le dan cierto estilo al texto que contienen. Ej: Negrita (b), cursiva(i), cita(cite), etc.
+                    </p>
+                </li>
+                <li>
+                    <span class="subtitulos">Otras etiquetas interesantes</span>
+                    <p>
+                        <ul>
+                            <li>-Para hacer párrafos usamos la etiqueta &lt; p &gt;. Se le pueden introducir más atributos como "align" que es para decir en que lugar va a estar el texto (left, center y right).</li>
+                            <li>-Para representar un texto tal y como está en un documento HTML se usa la etiqueta &lt pre &gt;.</li>
+                            <li>-Para hacer un salto de línea se usa &lt; br &gt;.</li>
+                            <li>-Para hacer una linea de separación horizontal se usa &lt; hr &gt;. Se puede usar también el atributo "align", el "size" que da el grosor a la línea, el "width" que da anchura y uno nuevo que se encargara de dar un aspecto tridimensional "noshade".</li>
+                        </ul>
+                    </p>
+                </li>
+            </ol>
+            <br>
+        </div>
+        <div id="tema3">
+        </div>
+        <div class="temas">
+            <h2 id="tema3">Tema 3: Imágenes y enlances</h2>
+            <ol>
+                <li>
+                    <span class="subtitulos">Imágenes:</span>
+                    <p>
+                        La inclusión de imagenes simples se hace desde las primeras versiones de HTML con la etiqueta &lt; img &gt;.<br>
+                        Importante es un elemento de línea.<br>
+                        Los atributos más comunes son <cite>src</cite>, <cite>alt</cite>,                          <cite>with</cite> y <cite>height</cite>.<br>
+                        Los tipos de ruta pueden ser relativos, absolutos y url, siendo relativa aquellas que toman en cuenta el directorio en el que se encuentra el documento; absoluto toman como base el directorio raíz del servidor y url es la dirección de la imagen en internet.<br>         
+                    </p>
+                </li>
+                <li>
+                    <span class="subtitulos">Figuras:</span>
+                    <p>
+                        Una novedad en HTML son las figuras.<br>
+                        Mostrar una imagen con un texto asociado.<br>
+                        Para ello se utiliza la etiqueta &lt; figure &gt;.<br>
+                    </p>
+                </li>
+                <li>
+                    <span class="subtitulos">Enlaces:</span>
+                    <p>
+                        Para insertar enlaces se utiliza la etiqueta &lt; a &gt;.<br>
+                        Los atributos más importantes son <cite>href</cite>, <cite>target</cite>,<cite>rel</cite>
+                    </p>
+                </li>
+            </ol>
+            <br>
+        </div>
+        <div id="tema3">
+        </div>
+        <div class="temas">
+            <h2 id="tema4">Tema 4: Listas y viñetas</h2>
+            <ol>
+                <li><span class="subtitulos">Listas.</span>
+                    <p>
+                        Las listas permiten crear filas con información y marcarla con viñetas o enumeraciones.<br>
+                    <ul>
+                        <li>
+                            <span class="subtitulos">Ordenadas</span>
+                            <p>
+                                Las ordenadas pueden enumerarse con números, letras o números romanos.<br>
+                                Se utiliza en relaciones cuyo orden es importante.<br>
+                                Sus atributos son <cite>type</cite> y <cite>start</cite>.<br>
+                            </p>
+                        </li>
+                        <li>
+                            <span class="subtitulos">No ordenadas</span>
+                            <p>
+                                Las no ordenadas pueden usar círculos, discos o cuadrados para marcar los elementos.<br>
+                                Se utiliza en realiza cuyo orden no es importante.<br>
+                                Sus atributos son <cite>type</cite> y <cite>start</cite>.<br>
+                            </p>
+                        </li>
+                        <li>
+                            <span class="subtitulos">A tener en cuenta:</span>
+                            <p>
+                                Son elementos de bloque.<br>
+                                Cada elemento de la lista se incluye en un &lt; li &gt;.<br>
+                                Se pueden anidar.<br>
+                                Hay que tabular bien<br>
+                            </p>
+                        </li>
+                    </ul>
+                    <p>
+                        Los navegadores interpretan las marcas contenidas en los documentos 
+                        HTML y representan la información.<br>
+                        Trabajando junto con las hojas de estilo (CSS) es un increíble         
+                        lenguaje de representación de información.<br>
+                        <br>
+                    </p>
+                </li>
+            </ol>
+            <br>
+        </div>
+        <div class="elboton">
+            <button class="btn">
+                Volver arriba
+            </button>
+        </div>
+    </div>
+</body>
+</html>
